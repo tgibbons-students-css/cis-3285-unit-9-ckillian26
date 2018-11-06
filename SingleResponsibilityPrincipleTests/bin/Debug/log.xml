@@ -1,0 +1,6 @@
+<log><type></type><message>Trade amount below 1000: '999'</message></log> 
+<log><type></type><message>Trade amount below 1000: '-10000'</message></log> 
+<log><type></type><message>Trade amount above 100000: '1000001'</message></log> 
+<log><type>WARN</type><message>Trade amount below 1000: '999'</message></log> 
+<log><type>WARN</type><message>Trade amount below 1000: '-10000'</message></log> 
+<log><type>WARN</type><message>Trade amount above 100000: '1000001'</message></log> 

@@ -1,6 +1,7 @@
 ﻿
 using SingleResponsibilityPrinciple.Contracts;
 
+
 namespace SingleResponsibilityPrinciple
 {
     public class SimpleTradeValidator : ITradeValidator
@@ -30,6 +31,7 @@ namespace SingleResponsibilityPrinciple
             if (!int.TryParse(tradeData[1], out tradeAmount))
             {
                 logger.LogWarning("Trade not a valid integer: '{0}'", tradeData[1]);
+               
                 return false;
             }
 
@@ -43,6 +45,7 @@ namespace SingleResponsibilityPrinciple
             if(tradeAmount < 1000 )
             {
                 logger.LogWarning("Trade amount below 1000: '{0}'", tradeData[1]);
+                
                 return false;
             }
             
@@ -52,7 +55,10 @@ namespace SingleResponsibilityPrinciple
                 return false;
             }
 
+
             return true;
         }
+   
+
     }
 }
